@@ -1,0 +1,111 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(252, 253, 252);
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnQwa20waTRnbW1iNW9yOWdva29tM3pheXEyc2QxcWFseDRnMGIydSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IeSXccYMz3K4U/giphy.gif);
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container{
+    background: linear-gradient(180deg , rgba(45, 191, 193, 0.685)  , rgb(242, 240, 238));
+    height: 500px;
+    width: 400px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    box-shadow: 5px 2px 10px;
+    position: relative;
+}
+
+.citycontainer{
+    position: absolute;
+    font-size: 80px;
+    display: block;
+    text-align: center;      
+    width: 100%;             
+    white-space: nowrap;     
+    overflow: hidden;        
+    text-overflow: ellipsis; 
+    bottom: 310px;
+    font-family: "Pixelify Sans";
+    
+}
+
+.emoji{
+    
+    position: absolute;
+    font-size: 4.5rem;
+    bottom: 210px;
+    
+}
+
+.formcontainer{
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.tempcontainer{
+    font-family: "Pixelify Sans";
+    font-weight: 500;
+    font-size: 30px;
+    position: absolute;
+    bottom: 210px;
+}
+.humicontainer{
+    position: absolute;
+    font-family: "Pixelify Sans";
+    top: 250px;
+    font-size: 30px;
+
+}
+
+.weathercontainer{
+    position: absolute;
+    font-family: "Pixelify Sans";
+    font-weight: 200;
+    font-size: 2.5rem;
+    top: 330px;
+}
+
+.submitbtn{
+    font-family: "Pixelify Sans";
+    background-color: #16aae0;
+    border-radius: 10px;
+    padding: 10px;
+    height: 50px;
+    color: white;
+}
+
+.cityinput{
+    border-radius: 10px;
+
+    height: 35px;
+    margin: 10px;
+}
+.errordisplay{
+    
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+button:hover{
+    background-color: #04578e;
+    animation-name: grow;
+    animation-duration: 0.2s;
+}
+@keyframes grow{
+    100%{transform: scale(1.05,1.05)}
+}
